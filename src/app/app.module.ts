@@ -21,6 +21,7 @@ import { ArtisanRegisterCompononent } from '../app/artisan-register/artisan-regi
 import { CustomerRegisterCompononent } from '../app/customer-register/customer-register.component';
 import { MyArtCompononent } from '../app/my-art/my-art.component';
 import { ProductConfirmationCompononent } from './product-confirmation/product-confirmation.component';
+import { CartCompononent } from './cart/cart.component';
 
 const appRoutes : Routes =  [
  { path: '', component: LoginCompononent},
@@ -31,7 +32,8 @@ const appRoutes : Routes =  [
  { path: 'artisan/register', component: ArtisanRegisterCompononent },
  { path: 'register', component: CustomerRegisterCompononent },
  { path: 'my-art', component: MyArtCompononent},
- { path: 'confirmation', component:ProductConfirmationCompononent }
+ { path: 'confirmation', component: ProductConfirmationCompononent },
+ { path: 'cart', component: CartCompononent }
 ];
 
 @NgModule({
@@ -47,6 +49,7 @@ const appRoutes : Routes =  [
     CustomerRegisterCompononent,
     MyArtCompononent,
     ProductConfirmationCompononent,
+    CartCompononent,
   ],
   imports: [
     BrowserModule,
